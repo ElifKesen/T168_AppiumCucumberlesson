@@ -3,7 +3,8 @@ Feature: Kiwi uygulama testleri
   @kiwi
   Scenario: Kiwi üzerinde bilet alma senaryosu
     Given Continue as a guest butonuna tiklanir
-    When Acilan sayfalarda Continue ve Explore the app tiklanir
+    #When Acilan sayfalarda Continue ve Explore the app tiklanir
+    When Acilan sayfalarda "Continue" ve "Explore the app"  tiklanir
     When Trip type one way olarak secilir
     When Kalkıs sehri secenegine tiklanir ve default olan sehir kaldirilir
     When Kalkıs sehri alanina Ankara yazilir ve Choose butonuna tiklanir
